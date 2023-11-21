@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div.main {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    /* height: 10vh; */
+    margin-bottom: 3vh;
+}
+
+div.submain,.main,.subdiv {
+    width: 100vw;
+    height: 9.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: whitesmoke;
+    font-family: 'Exo 2', sans-serif;
+}
+
+div.subdiv {
+    height: 0.5vh;
+    width: 80vw;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    animation: infinite border-fade-animation 2s ease-in-out  alternate-reverse;
+    transform: rotateX(80deg);
+}
+
+@keyframes border-fade-animation {
+    from {
+        opacity: 0.3;
+        background-color: #A9C52F;
+    }
+    
+    to {
+        opacity: 1;
+        background-color: #228896;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    div.main{
+        height: 15vh;
+        /* gap: 2vh; */
+    }
+    div.main > div{
+        margin-top:2vh;
+    }
+}
