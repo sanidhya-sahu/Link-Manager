@@ -46,7 +46,7 @@ div.subdiv {
     }
 }
 
-@media screen and (orientation: landscape) {
+@media (max-width: 767px) and (orientation: landscape) {
     div.main{
         height: 15vh;
         /* gap: 2vh; */
